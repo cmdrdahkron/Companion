@@ -1,0 +1,8 @@
+  engines:
+    etd:
+      increments:
+        '25':
+          - hcspack/engines_thrusters_and_drives/etd_increments/25_percent_engaged.mp3
+          - hcspack/engines_thrusters_and_drives/etd_increments/25_sir.mp3
+          - hcspack/engines_thrusters_and_drives/etd_increments/understood_25_percent.mp3
+          - hcspack/engines_thrusters_and_drives/etd_increments/yes_sir_25_percent.mp3
