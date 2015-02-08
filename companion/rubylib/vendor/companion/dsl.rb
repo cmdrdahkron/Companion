@@ -1,4 +1,5 @@
-module DSL
+module Companion::DSL
+
   def sub(name, &block)
   end
 
@@ -22,6 +23,5 @@ module DSL
   def set(name, value)
     ::Native.vars
   end
-end
 
-include DSL
+end

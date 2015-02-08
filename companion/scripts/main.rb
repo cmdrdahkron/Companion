@@ -84,4 +84,4 @@
 # on '(|deploy|retract) landing gear' { |state|
 # }
 
-puts "LOADED!"
+# puts "LOADED!"
