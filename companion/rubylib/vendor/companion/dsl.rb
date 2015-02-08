@@ -1,9 +1,3 @@
-class Array
-  def sample
-    self[rand(count)]
-  end
-end
-
 module DSL
   def sub(name, &block)
   end

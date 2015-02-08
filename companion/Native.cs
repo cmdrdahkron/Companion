@@ -29,7 +29,7 @@ namespace companion {
       System.Console.WriteLine("Reloading...");
 
       speechEngine.UnloadAllGrammars();
-      scriptEngine.RequireFile("companion/setup");
+      scriptEngine.ExecuteFile("main.rb");
     }
 
     public void On(String pattern, RubyArray values) {
@@ -67,12 +67,12 @@ namespace companion {
       string scriptsDir = Path.Combine(baseDir, "scripts");
 
       List<string> searchPaths = new List<string>();
-      searchPaths.Add(baseDir);
-      searchPaths.Add(Path.Combine(rubylibDir,"IronRuby"));
+      // searchPaths.Add(baseDir);
+      searchPaths.Add(Path.Combine(rubylibDir, "IronRuby"));
       searchPaths.Add(Path.Combine(rubylibDir, "ruby", "site_ruby", "1.9.1"));
       searchPaths.Add(Path.Combine(rubylibDir, "ruby", "site_ruby"));
       searchPaths.Add(Path.Combine(rubylibDir, "ruby", "1.9.1"));
-      searchPaths.Add(Path.Combine(rubylibDir));
+      // searchPaths.Add(Path.Combine(rubylibDir, "vendor"));
       scriptEngine.SetSearchPaths(searchPaths);
 
       scriptEngine.Runtime.Globals.SetVariable("Native", this);

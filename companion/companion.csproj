@@ -109,7 +109,8 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(ProjectDir)rubylib" "$(ProjectDir)\$(OutDir)\rubylib" /i /s /y
-xcopy "$(ProjectDir)scripts" "$(ProjectDir)\$(OutDir)\scripts" /i /s /y</PostBuildEvent>
+xcopy "$(ProjectDir)scripts" "$(ProjectDir)\$(OutDir)\scripts" /i /s /y
+copy "$(ProjectDir)main.rb" "$(ProjectDir)\$(OutDir)\main.rb"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
