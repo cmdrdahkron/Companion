@@ -2,7 +2,20 @@
 # HAL 9000 - my test companion personality.
 #
 
-companion 'hal' do
+companion "hal" do
+
+  game "elite"
+
+  bind "LandingGearToggle" do
+    if game.landing_gear.deployed?
+      say "Retracting the landing gear"
+    else
+      say "Deploying the landing gear"
+    end
+    elite.landing_gear.toggle!
+  end
+
+  # event ""
 
   hear "open the pod pay doors (|HAL)" do
     say "I'm sorry, Dave. I'm afraid I can't do that."
@@ -26,13 +39,12 @@ companion 'hal' do
   end
 
   hear "(|deploy|retract) landing gear" do |state|
-    case state
-    when "deploy"
-      say "Deploying the landing gear"
-    when "retract"
-      say "Retracting the landing gear"
+    if state
+      if game.landing_gear.deployed?
+      else
+      end
     else
-      say "Toggling the landing gear"
+      game.landing_gear.toggle!
     end
   end
 

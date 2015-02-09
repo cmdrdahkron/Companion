@@ -2,21 +2,46 @@ require 'companion/extensions/array'
 
 module Companion
 
+  class Native
+    class << self
+      def on(pattern, options = {}, &block)
+        puts "Listening: #{pattern}"
+        ::Native.On(pattern)
+      end
+
+      def say(phrase, options = {}, &block)
+        puts "Saying: #{phrase}"
+        ::Native.Say(phrase)
+      end
+
+      def play(file, options = {}, &block)
+        puts "Playing: #{file}"
+        ::Native.Play(file)
+      end
+    end
+  end
+
   module DSL
-    def sub(name, &block)
+    def game(name)
     end
 
-    def on(pattern, &block)
-      # ::Native.On pattern, values
-      yield '25'
+    def bind(event, options = {}, &block)
     end
 
-    def play(file)
-      puts "Playing sound #{file}"
+    def log(message)
+      ::Kernel.puts(message)
     end
 
-    def say(phrase)
-      puts "Saying: #{phrase}"
+    def hear(pattern, options = [], &block)
+      Companion::Native.on(pattern, options, &block)
+    end
+
+    def play(file, options = {}, &block)
+      Companion::Native.play(file, options, &block)
+    end
+
+    def say(phrase, options = [], &block)
+      Companion::Native.say(phrase, options, &block)
     end
 
     def base_dir
@@ -27,9 +52,9 @@ module Companion
       YAML.load_file File.join(base_dir, file)
     end
 
-    def set(name, value)
-      ::Native.vars
-    end
+    # def set(name, value)
+    #   ::Native.vars
+    # end
   end
 
   class Builder < BasicObject
@@ -42,7 +67,7 @@ module Companion
     end
 
     def self.build(name, &block)
-      self.new.instance_eval(&block)
+      self.new(name).instance_eval(&block)
     end
   end
 
@@ -56,6 +81,6 @@ module Companion
 
 end
 
-def companion(name, &block)
-  Companion.build(name, &block)
+def companion(name, game = 'generic', &block)
+  Companion::Builder.build(name, &block)
 end
