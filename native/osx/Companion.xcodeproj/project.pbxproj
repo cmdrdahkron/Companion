@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD75F72A1A891F390089C968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD75F7291A891F390089C968 /* AppDelegate.swift */; };
+		AD75F72C1A891F390089C968 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD75F72B1A891F390089C968 /* Images.xcassets */; };
+		AD75F72F1A891F390089C968 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD75F72D1A891F390089C968 /* MainMenu.xib */; };
+		AD75F73B1A891F390089C968 /* CompanionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD75F73A1A891F390089C968 /* CompanionTests.swift */; };
+		AD75F7451A8922030089C968 /* Native.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD75F7441A8922030089C968 /* Native.swift */; };
+		AD75F7691A892DAD0089C968 /* libmruby_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD75F7671A892DAD0089C968 /* libmruby_core.a */; };
+		AD75F76A1A892DAD0089C968 /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD75F7681A892DAD0089C968 /* libmruby.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD75F7351A891F390089C968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD75F71C1A891F390089C968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD75F7231A891F390089C968;
+			remoteInfo = Companion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD75F7241A891F390089C968 /* Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Companion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD75F7281A891F390089C968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD75F7291A891F390089C968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD75F72B1A891F390089C968 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD75F72E1A891F390089C968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AD75F7341A891F390089C968 /* CompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompanionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD75F7391A891F390089C968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD75F73A1A891F390089C968 /* CompanionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionTests.swift; sourceTree = "<group>"; };
+		AD75F7441A8922030089C968 /* Native.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Native.swift; sourceTree = "<group>"; };
+		AD75F7661A892CDD0089C968 /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+		AD75F7671A892DAD0089C968 /* libmruby_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby_core.a; path = ../../vendor/mruby/build/host/lib/libmruby_core.a; sourceTree = "<group>"; };
+		AD75F7681A892DAD0089C968 /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = ../../vendor/mruby/build/host/lib/libmruby.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD75F7211A891F390089C968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD75F7691A892DAD0089C968 /* libmruby_core.a in Frameworks */,
+				AD75F76A1A892DAD0089C968 /* libmruby.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75F7311A891F390089C968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD75F71B1A891F390089C968 = {
+			isa = PBXGroup;
+			children = (
+				AD75F7261A891F390089C968 /* Companion */,
+				AD75F7371A891F390089C968 /* CompanionTests */,
+				AD75F7251A891F390089C968 /* Products */,
+				AD75F7481A8929C70089C968 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD75F7251A891F390089C968 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD75F7241A891F390089C968 /* Companion.app */,
+				AD75F7341A891F390089C968 /* CompanionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD75F7261A891F390089C968 /* Companion */ = {
+			isa = PBXGroup;
+			children = (
+				AD75F7291A891F390089C968 /* AppDelegate.swift */,
+				AD75F72B1A891F390089C968 /* Images.xcassets */,
+				AD75F72D1A891F390089C968 /* MainMenu.xib */,
+				AD75F7271A891F390089C968 /* Supporting Files */,
+				AD75F7441A8922030089C968 /* Native.swift */,
+				AD75F7661A892CDD0089C968 /* Bridging.h */,
+			);
+			path = Companion;
+			sourceTree = "<group>";
+		};
+		AD75F7271A891F390089C968 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD75F7281A891F390089C968 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD75F7371A891F390089C968 /* CompanionTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD75F73A1A891F390089C968 /* CompanionTests.swift */,
+				AD75F7381A891F390089C968 /* Supporting Files */,
+			);
+			path = CompanionTests;
+			sourceTree = "<group>";
+		};
+		AD75F7381A891F390089C968 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD75F7391A891F390089C968 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD75F7481A8929C70089C968 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD75F7671A892DAD0089C968 /* libmruby_core.a */,
+				AD75F7681A892DAD0089C968 /* libmruby.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD75F7231A891F390089C968 /* Companion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD75F73E1A891F390089C968 /* Build configuration list for PBXNativeTarget "Companion" */;
+			buildPhases = (
+				AD75F7201A891F390089C968 /* Sources */,
+				AD75F7211A891F390089C968 /* Frameworks */,
+				AD75F7221A891F390089C968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Companion;
+			productName = Companion;
+			productReference = AD75F7241A891F390089C968 /* Companion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD75F7331A891F390089C968 /* CompanionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD75F7411A891F390089C968 /* Build configuration list for PBXNativeTarget "CompanionTests" */;
+			buildPhases = (
+				AD75F7301A891F390089C968 /* Sources */,
+				AD75F7311A891F390089C968 /* Frameworks */,
+				AD75F7321A891F390089C968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD75F7361A891F390089C968 /* PBXTargetDependency */,
+			);
+			name = CompanionTests;
+			productName = CompanionTests;
+			productReference = AD75F7341A891F390089C968 /* CompanionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD75F71C1A891F390089C968 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Cliff Rowley";
+				TargetAttributes = {
+					AD75F7231A891F390089C968 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					AD75F7331A891F390089C968 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = AD75F7231A891F390089C968;
+					};
+				};
+			};
+			buildConfigurationList = AD75F71F1A891F390089C968 /* Build configuration list for PBXProject "Companion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD75F71B1A891F390089C968;
+			productRefGroup = AD75F7251A891F390089C968 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD75F7231A891F390089C968 /* Companion */,
+				AD75F7331A891F390089C968 /* CompanionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD75F7221A891F390089C968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD75F72C1A891F390089C968 /* Images.xcassets in Resources */,
+				AD75F72F1A891F390089C968 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75F7321A891F390089C968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD75F7201A891F390089C968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD75F7451A8922030089C968 /* Native.swift in Sources */,
+				AD75F72A1A891F390089C968 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75F7301A891F390089C968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD75F73B1A891F390089C968 /* CompanionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD75F7361A891F390089C968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD75F7231A891F390089C968 /* Companion */;
+			targetProxy = AD75F7351A891F390089C968 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD75F72D1A891F390089C968 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD75F72E1A891F390089C968 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD75F73C1A891F390089C968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD75F73D1A891F390089C968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AD75F73F1A891F390089C968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../../vendor/mruby/include",
+				);
+				INFOPLIST_FILE = Companion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/crowley/Work/companion/vendor/mruby/build/host/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Companion/Bridging.h;
+			};
+			name = Debug;
+		};
+		AD75F7401A891F390089C968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../../vendor/mruby/include",
+				);
+				INFOPLIST_FILE = Companion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/crowley/Work/companion/vendor/mruby/build/host/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Companion/Bridging.h;
+			};
+			name = Release;
+		};
+		AD75F7421A891F390089C968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CompanionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Companion.app/Contents/MacOS/Companion";
+			};
+			name = Debug;
+		};
+		AD75F7431A891F390089C968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CompanionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Companion.app/Contents/MacOS/Companion";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD75F71F1A891F390089C968 /* Build configuration list for PBXProject "Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD75F73C1A891F390089C968 /* Debug */,
+				AD75F73D1A891F390089C968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD75F73E1A891F390089C968 /* Build configuration list for PBXNativeTarget "Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD75F73F1A891F390089C968 /* Debug */,
+				AD75F7401A891F390089C968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD75F7411A891F390089C968 /* Build configuration list for PBXNativeTarget "CompanionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD75F7421A891F390089C968 /* Debug */,
+				AD75F7431A891F390089C968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD75F71C1A891F390089C968 /* Project object */;
+}
