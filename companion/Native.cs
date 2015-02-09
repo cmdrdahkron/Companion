@@ -72,20 +72,20 @@ namespace companion {
       searchPaths.Add(Path.Combine(rubylibDir, "ruby", "site_ruby", "1.9.1"));
       searchPaths.Add(Path.Combine(rubylibDir, "ruby", "site_ruby"));
       searchPaths.Add(Path.Combine(rubylibDir, "ruby", "1.9.1"));
-      // searchPaths.Add(Path.Combine(rubylibDir, "vendor"));
+      searchPaths.Add(Path.Combine(rubylibDir, "vendor"));
       scriptEngine.SetSearchPaths(searchPaths);
 
       scriptEngine.Runtime.Globals.SetVariable("Native", this);
 
-      fileSystemWatcher = new FileSystemWatcher(baseDir, rubylibDir);
-      fileSystemWatcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName;
-      fileSystemWatcher.IncludeSubdirectories = true;
-      fileSystemWatcher.Filter = "*.rb";
-      fileSystemWatcher.Changed += fileSystemWatcher_Changed;
-      fileSystemWatcher.Created += fileSystemWatcher_Created;
-      fileSystemWatcher.Deleted += fileSystemWatcher_Deleted;
-      fileSystemWatcher.Renamed += fileSystemWatcher_Renamed;
-      fileSystemWatcher.EnableRaisingEvents = true;
+      //fileSystemWatcher = new FileSystemWatcher(baseDir, rubylibDir);
+      //fileSystemWatcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName;
+      //fileSystemWatcher.IncludeSubdirectories = true;
+      //fileSystemWatcher.Filter = "*.rb";
+      //fileSystemWatcher.Changed += fileSystemWatcher_Changed;
+      //fileSystemWatcher.Created += fileSystemWatcher_Created;
+      //fileSystemWatcher.Deleted += fileSystemWatcher_Deleted;
+      //fileSystemWatcher.Renamed += fileSystemWatcher_Renamed;
+      //fileSystemWatcher.EnableRaisingEvents = true;
     }
 
     void fileSystemWatcher_Renamed(object sender, RenamedEventArgs e) {
