@@ -72,6 +72,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MRuby.cs" />
     <Compile Include="Native.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
