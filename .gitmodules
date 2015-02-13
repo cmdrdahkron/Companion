@@ -1,0 +1,3 @@
+[submodule "vendor/mruby-dll"]
+	path = vendor/mruby-dll
+	url = https://github.com/cremno/mruby-dll.git
